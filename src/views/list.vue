@@ -118,19 +118,19 @@
                 let str = '';
                 switch (tab) {
                     case 'share':
-                        str = '分享';
+                        str = '已有服务';
                         break;
                     case 'ask':
-                        str = '问答';
+                        str = '社区';
                         break;
                     case 'job':
-                        str = '招聘';
+                        str = '客服';
                         break;
                     case 'good':
-                        str = '精华';
+                        str = '旅行需求';
                         break;
                     default:
-                        str = '全部';
+                        str = '推荐';
                         break;
                 }
                 return str;

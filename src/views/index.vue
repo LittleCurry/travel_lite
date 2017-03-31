@@ -12,7 +12,7 @@
         mounted() {
             setTimeout(() => {
                 this.$router.push({
-                    name: 'list'
+                    name: 'sliderView'
                 });
             }, 2000);
         }

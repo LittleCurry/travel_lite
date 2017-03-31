@@ -6,8 +6,12 @@ import routes from './routers';
 import Alert from './libs/alert';
 import store from './vuex/user';
 import FastClick from 'fastclick';
+import ElementUI from 'element-ui';
+import 'element-ui/lib/theme-default/index.css';
+// import App from './App.vue';
 Vue.use(VueRouter);
 Vue.use(Alert);
+Vue.use(ElementUI);
 
 $.ajaxSettings.crossDomain = true;
 
@@ -44,6 +48,10 @@ router.beforeEach((to, from, next) => {
     }
 });
 
+// new Vue({
+//   el: '#app',
+//   render: h => h(App)
+// })
 new Vue({
     router,
     store
