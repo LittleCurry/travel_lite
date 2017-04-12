@@ -17,6 +17,12 @@ const SliderView = resolve => {
     });
 };
 
+const Need = resolve => {
+    require.ensure(['./views/need.vue'], () => {
+        resolve(require('./views/need.vue'));
+    });
+};
+
 const routers = [{
     path: '/',
     name: 'home',
@@ -29,6 +35,10 @@ const routers = [{
     path: '/sliderView',
     name: 'sliderView',
     component: SliderView
+}, {
+    path: '/need',
+    name: 'need',
+    component: Need
 }, {
     path: '/list',
     name: 'list',
