@@ -23,6 +23,12 @@ const Need = resolve => {
     });
 };
 
+const SubmitNeed = resolve => {
+    require.ensure(['./views/submitNeed.vue'], () => {
+        resolve(require('./views/submitNeed.vue'));
+    });
+};
+
 const routers = [{
     path: '/',
     name: 'home',
@@ -39,6 +45,10 @@ const routers = [{
     path: '/need',
     name: 'need',
     component: Need
+}, {
+    path: '/submitNeed',
+    name: 'submitNeed',
+    component: SubmitNeed
 }, {
     path: '/list',
     name: 'list',

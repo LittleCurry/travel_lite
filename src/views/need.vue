@@ -3,7 +3,7 @@
         <nv-head page-type="需求"
                  :fix-head="true"
                  :need-add="true"></nv-head>
-    <router-link :to="{name:'list'}">
+    <router-link :to="{name:'submitNeed'}">
         <el-button style="margin-top: 100px; margin-left: 50px;" type="primary" @click.native="makeNeed">发布<i class="el-icon-upload el-icon--right"></i></el-button>
     </router-link>
     </div>
