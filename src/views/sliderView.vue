@@ -1,6 +1,5 @@
 <template>
     <div style="height: 100%;">
-        <!--<nv-banner></nv-banner>-->
         <nv-head page-type="推荐"
                  :fix-head="true"
                  :need-add="true"></nv-head>
