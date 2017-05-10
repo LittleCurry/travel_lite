@@ -198,6 +198,7 @@ export default {
 </script>
 
 <style>
+
 /*
 .filters {
     margin: 0 0 20px 0;
